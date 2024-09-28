@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #c89800; /* Gold color to match Expo Dubai */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Align logo and text */
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust logo height */
+    width: auto;
+    vertical-align: middle;
+}
+
+.nav-item {
+    margin-right: 5px; /* Add space between the nav items */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #333 !important; /* Darker hover color */
+}
+
+.navbar-nav {
+    float: right; /* Aligns nav items to the right */
+}
+
+/* Slideshow Styles */
+#slideshow {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#slideshow-container {
+    position: relative;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    border-radius: 0;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    color: white;
+    background-color: #003DA5;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+header .btn {
+    margin-top: 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+#explore-expo .section-part {
+    padding: 20px;
+    text-align: center;
+}
+
+#explore-expo .part1 {
+    background-color: #f0f0f0;
+}
+
+#explore-expo .part2 {
+    background-color: #e0e0e0;
+}
+
+#explore-expo .part3 {
+    background-color: #d0d0d0;
+}
+
+/* Footer */
+footer {
+    background-color: #c89800;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.25rem;
+    }
+
+    #slideshow {
+        height: 300px;
+    }
+}
